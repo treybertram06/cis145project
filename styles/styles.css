@@ -19,7 +19,7 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid hsl(0, 0%, 5%);
+    border: 0px;
     text-align: left;
     padding: 8px;
 }
