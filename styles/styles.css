@@ -48,9 +48,20 @@ a:visited, a:hover {
     padding: 10px;
     justify-content: center;
 }
-.photoGallery img {
-    flex: 1 1 auto;
-    max-width: 32.3%;
-    height: auto;
-    display: block;
+.photoGallery figure { 
+    flex: 1 1 30%;
+    box-sizing: border-box; 
+    margin: 0; 
+} 
+.photoGallery img { 
+    width: 100%; 
+    height: auto; 
+    max-height: 300px;
+    object-fit: cover;
+    display: block; 
+} 
+.photoGallery figcaption { 
+    text-align: center; 
+    padding: 5px; 
+    color: hsl(0, 0%, 80%); 
 }
