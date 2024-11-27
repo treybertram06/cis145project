@@ -3,9 +3,58 @@
     <head>
         <title>CIS 145 Project</title>
         <link rel="stylesheet" href="styles/styles.css">
+        <script src="js/main.js"></script>
 
+        <style id="theme-style">
+            body {
+                background-color: hsl(0, 0%, 20%);
+                color: hsl(0, 0%, 80%);
+            }
+            #pageTitle {
+                color: hsl(0, 0%, 80%);
+            }
+            table tr:nth-child(even) {
+                background-color: hsl(0, 0%, 25%);
+            }
+            th {
+                background-color: hsl(0, 0%, 13%);
+            }
+            tfoot {
+                background-color: hsl(0, 0%, 13%);
+            }
+            a:link {
+                color: hsla(0, 100%, 50%, 0.75);
+            }
+            a:visited, a:hover {
+                color: hsla(0, 100%, 50%, 0.5);
+            }
+            .photoGallery figcaption {
+                color: hsl(0, 0%, 80%);
+            }
+            .contactForm {
+                background-color: hsl(0, 0%, 10%);
+            }
+            .contactForm label {
+                color: hsl(0, 0%, 80%);
+            }
+            .contactForm input,
+            .contactForm textarea,
+            .contactForm select {
+                background-color: hsl(0, 0%, 20%);
+                color: hsl(0, 0%, 80%);
+                border: 1px solid hsl(0, 0%, 40%);
+            }
+            .contactForm button {
+                background-color: hsla(0, 100%, 50%, 0.75);
+                color: hsl(0, 0%, 80%);
+            }
+            .contactForm button:hover {
+                background-color: hsla(0, 100%, 50%, 0.5);
+            }
+        </style>
     </head>
-    <body class="poppins-regular">
+    <body class="poppins-regular" id="body">
+        <button id="themeButton" onclick="toggleTheme()">Toggle Theme</button>
         <h1 id="pageTitle">Project Portfolio</h1>
         <hr>
         <br>
@@ -27,6 +76,7 @@
                 <tr> <td colspan="4">You can find all my work here: <a href="https://github.com/treybertram06">Github</a> </td> </tr> 
             </tfoot>
         </table>
+        <button id="tableButton" onclick="hideIncompleteProjects()">Hide Incomplete Projects</button>
 
         <br><br>
 
